@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto - Soluciones en Impermeabilización</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+<!--
+
+TemplateMo 550 Diagoona
+
+https://templatemo.com/tm-550-diagoona
+
+-->
+    <style>
+        /* Estilos para el mapa responsivo */
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* Proporción 16:9, ideal para mapas anchos */
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tm-container">        
+        <div>
+            <div class="tm-row pt-4">
+                <div class="tm-col-left">
+                    <div class="tm-site-header media">
+                        <img src="img/Conturc_factory_Logotipo_blanco.svg" alt="Logo" class="tm-logo" style="height: 180px;">
+                        <div class="media-body">
+                            <p class="tm-slogon">Soluciones en</p>
+                            <h1 class="tm-sitename text-uppercase">Impermeabilización</h1>
+                        </div>        
+                    </div>
+                </div>
+                <div class="tm-col-right">
+                    <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+                        <button class="navbar-toggler toggler-example mr-0 ml-auto" type="button" 
+                            data-toggle="collapse" data-target="#navbar-nav" 
+                            aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+                            <ul class="navbar-nav text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="guardian.html">Guardián</a>
+                                </li>                                
+                                <li class="nav-item">
+                                    <a class="nav-link tm-nav-link" href="nosotros.html">Nosotros</a>
+                                </li>                            
+                                <li class="nav-item active">
+                                    <a class="nav-link tm-nav-link" href="contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                                </li>    
+                            </ul>                            
+                        </div>                        
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="tm-row">
+                <div class="tm-col-left d-flex justify-content-center align-items-center" style="min-height: 10px;">
+                </div>
+                <main class="tm-col-right">
+                    <section class="tm-content">
+                        <h2 class="mb-4 tm-content-title">Contáctanos</h2>
+                        <p class="mb-5">
+                            Completa el siguiente formulario para enviarnos un mensaje. Nos pondremos en contacto contigo lo antes posible.
+                        </p>
+
+                        <!-- Formulario de Contacto Actualizado -->
+                        <form id="contact-form" action="" method="POST" class="mb-5">
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" required />
+                                </div>
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="text" name="apellido" class="form-control" placeholder="Apellido" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="text" name="empresa" class="form-control" placeholder="Empresa (Opcional)" />
+                                </div>
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" required />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="tel" name="numero" class="form-control" placeholder="Número de Contacto" required />
+                                </div>
+                                <div class="col-md-6 form-group mb-4">
+                                    <input type="text" name="ciudad" class="form-control" placeholder="Ciudad" required />
+                                </div>
+                            </div>
+                            <div class="form-group mb-5">
+                                <textarea rows="6" name="message" class="form-control" placeholder="Mensaje..." required></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-big btn-primary">Enviar Mensaje</button>
+                            </div>
+                        </form>
+
+                        <!-- Separador -->
+                        <hr class="my-5">
+
+                        <!-- Sección de Información de Contacto -->
+                        <div class="mb-5">
+                            <h3 class="mb-4">Información de Contacto Directo</h3>
+                            <div class="row">
+                                <div class="col-sm-4 mb-4">
+                                    <h5><i class="fas fa-map-marker-alt mr-2"></i>Ubicación</h5>
+                                    <p>Carrera 11 # 6-68 sur, Sogamoso, Boyacá, Colombia</p>
+                                </div>
+                                <div class="col-sm-4 mb-4">
+                                    <h5><i class="fas fa-phone mr-2"></i>Teléfono</h5>
+                                    <p><a href="tel:+573153406167">(+57) 315 3406167</a></p>
+                                </div>
+                                <div class="col-sm-4 mb-4">
+                                    <h5><i class="fas fa-envelope mr-2"></i>Correo Electrónico</h5>
+                                    <p><a href="mailto:construc.factory.sogamoso@gmail.com">construc.factory.sogamoso@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sección del Mapa -->
+                        <div>
+                            <h3 class="mb-4">Nuestra Ubicación en el Mapa</h3>
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m11!1m3!1d573.2944079896225!2d-72.94039145432869!3d5.698060915397174!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2sco!4v1753144176632!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>  
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>        
+
+        <div class="tm-row">
+            <div class="tm-col-left text-center">            
+                <ul class="tm-bg-controls-wrapper">
+                    <li class="tm-bg-control active" data-id="0"></li>
+                    <li class="tm-bg-control" data-id="1"></li>
+                    <li class="tm-bg-control" data-id="2"></li>
+                </ul>            
+            </div>        
+            <div class="tm-col-right tm-col-footer">
+            </div>  
+        </div>
+
+        <footer class="custom-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <strong>Dirección:</strong><br>
+                    Carrera 11 # 6-68 sur, Sogamoso, Boyacá, Colombia
+                </div>
+                <div class="footer-section">
+                    <strong>Redes Sociales:</strong><br>
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> |
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |                   
+                    <a href="https://wa.me/573153406167" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+                <div class="footer-section">
+                    <strong>Contacto:</strong><br>
+                    Tel: (+57) 315 3406167 <br>
+                    Email: construc.factory.sogamoso@gmail.com
+                </div>
+            </div>
+            <div class="footer-copyright" style="text-align: right; font-size: 0.9em; margin-top: 10px;">
+                Copyright 2025 Construc Factory  
+                | Diseño: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-text-link">TemplateMo</a>
+            </div>
+        </footer>
+    </div>
+
+    <a href="https://wa.me/573153406167" class="whatsapp-float" target="_blank" title="Chatea por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="tm-bg">
+        <div class="tm-bg-left"></div>
+        <div class="tm-bg-right"></div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+</body>
+</html>
