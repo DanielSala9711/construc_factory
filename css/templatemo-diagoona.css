@@ -94,6 +94,8 @@ body {
     overflow-x: hidden;
     color: white;
     background-color: #2C353C;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -447,12 +449,22 @@ textarea {
 }
 
 @media (max-width: 768px) {
+    .tm-container {
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
     .tm-row {
         flex-direction: column;
     }
 
     .tm-col-left,
-    .tm-col-right,
+    .tm-col-right {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .tm-bg-left,
     .tm-bg-right {
         width: 100%;
@@ -461,12 +473,16 @@ textarea {
     #tm-main-nav {
         position: fixed;
         top: 50px;
-        right: 40px;
+        right: 20px;
         padding-bottom: 0;
+        z-index: 1000;
     }
 
     .tm-bg {
         flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
     }
 
     .tm-bg-left {
@@ -477,22 +493,22 @@ textarea {
     }
 
     .tm-bg-right {
-        height: calc(100% - 200px);
+        height: calc(100vh - 250px);
     }
 
     .tm-bg-controls-wrapper {
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .tm-content {
         max-height: none;
-        margin-top: 40px;
+        margin-top: 20px;
+        padding-right: 0;
     }
 
     .tm-col-right {
-        padding-top: 40px;
-        padding-left: 30px;
+        padding-top: 20px;
     }
 
     .tm-col-footer {
@@ -504,6 +520,10 @@ textarea {
         height: 40px;
         max-width: 80px;
         margin-right: 8px;
+    }
+
+    .custom-footer {
+        margin-top: 20px;
     }
 }
 
@@ -556,7 +576,7 @@ textarea {
 
 @media (max-width: 991px) {
     .guardian-logo-img {
-        max-height: 320px;
+        max-height: 450px;
         min-height: 90px;
         margin-top: 30px;
     }
@@ -564,7 +584,7 @@ textarea {
 
 @media (max-width: 767px) {
     .guardian-logo-img {
-        max-height: 220px;
+        max-height: 400px;
         min-height: 120px;
         margin-top: 25px;
     }
@@ -581,6 +601,7 @@ textarea {
 
 .spec-list {
     list-style: none;
+    font-size: 1.2rem;
     padding-left: 0;
 }
 
@@ -929,6 +950,31 @@ textarea {
     max-width: 100%;
     margin: 2%;
     border-radius: 18px;
+    gap: 20px;
+}
+
+.section-quienes .container {
+    flex: 1;
+}
+
+.section-quienes .image-content {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .section-quienes {
+        flex-direction: column;
+    }
+    
+    .section-quienes .image-content {
+        order: 2;
+        margin-top: 20px;
+    }
+    
+    .section-quienes .container {
+        order: 1;
+    }
 }
 
 .section-equipo {
@@ -975,4 +1021,13 @@ textarea {
     height: 150px;
     object-fit: cover;
     margin-bottom: 15px;
+}
+
+/* Clase unificada para elementos lead */
+.lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 1.5rem;
 }
