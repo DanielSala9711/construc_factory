@@ -113,12 +113,13 @@ https://templatemo.com/tm-550-diagoona
                                 </div>
                             </div>
                             <div class="form-group mb-5">
-                                <textarea rows="6" name="message" class="form-control" placeholder="Mensaje..." required></textarea>
+                                <textarea rows="6" name="mensaje" class="form-control" placeholder="Mensaje..." required></textarea>
                             </div>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-big btn-primary">Enviar Mensaje</button>
                             </div>
                         </form>
+                        
 
                         <!-- Separador -->
                         <hr class="my-5">
@@ -202,6 +203,46 @@ https://templatemo.com/tm-550-diagoona
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/templatemo-style.js"></script>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Enviando...';
+            
+            const formData = new FormData();
+            formData.append('nombre', this.nombre.value);
+            formData.append('apellido', this.apellido.value);
+            formData.append('empresa', this.empresa.value);
+            formData.append('email', this.email.value);
+            formData.append('numero', this.numero.value);
+            formData.append('ciudad', this.ciudad.value);
+            formData.append('mensaje', this.mensaje.value);
+            
+            fetch('https://script.google.com/macros/s/AKfycbzoWHMzOAJpydlaUKl1JYiv4jWo6FyTOOiib2ZCgAZmE8v_ij-8B8DQA3SYocWdLJ36/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(() => {
+                alert('¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+            });
+        });
+    </script>/script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/templatemo-script.js"></script>
