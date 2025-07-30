@@ -802,7 +802,7 @@ textarea:-webkit-autofill:active {
 .detalle-img {
     max-width: 530px;
     margin: 0.7rem 0;
-    background: #fff;
+    background: transparent;
 }
 
 .detalle-img-col {
