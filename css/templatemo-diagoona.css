@@ -553,14 +553,24 @@ textarea:-webkit-autofill:active {
 @media (max-width: 460px) {
     .tm-logo {
         margin-right: 15px;
+        height: 120px !important;
     }
 
     .tm-sitename {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .tm-slogon {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .tm-site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tm-site-header .media-body {
+        margin-top: 10px;
     }
 }
 
@@ -607,17 +617,38 @@ textarea:-webkit-autofill:active {
 
 @media (max-width: 767px) {
     .guardian-logo-img {
-        max-height: 400px;
-        min-height: 120px;
-        margin-top: 25px;
+        max-height: 300px;
+        min-height: 100px;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
     
     .guardian-section {
-        padding: 1.2rem 0.5rem;
+        padding: 1rem 0.5rem;
+        margin-top: 10px;
     }
 
     .gallery-img img {
         height: 110px;
+    }
+
+    .tm-content-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .spec-list {
+        font-size: 1rem;
+    }
+
+    .btn-success.btn-lg {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        margin: 5px;
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 10px auto;
     }
 }
 
@@ -988,6 +1019,8 @@ textarea:-webkit-autofill:active {
 @media (max-width: 768px) {
     .section-quienes {
         flex-direction: column;
+        padding: 40px 15px;
+        margin: 1%;
     }
     
     .section-quienes .image-content {
@@ -997,6 +1030,31 @@ textarea:-webkit-autofill:active {
     
     .section-quienes .container {
         order: 1;
+    }
+
+    .section-verde {
+        padding: 40px 15px;
+        margin: 1%;
+    }
+
+    .section-equipo {
+        padding: 40px 15px;
+        margin: 1%;
+    }
+
+    .section-equipo .col-md-5 {
+        margin-bottom: 30px;
+    }
+
+    .section-equipo img,
+    .section-equipo .rounded-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .detalle-titulo {
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
 
